@@ -8,7 +8,7 @@ def neuron(inputs,weights,threshold):
 
     output = 0
     # Condition for firing the neuron if summation is over threshold
-    if z>threshold:
+    if z>=threshold:
         output=1
     else:
         output=0
@@ -19,5 +19,5 @@ inputs = np.array([1,2,3])
 weights = np.array([-1,-5,6])
 threshold = 10
 
-# firng neuron
+# firing neuron
 print(neuron(inputs,weights,threshold))
